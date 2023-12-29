@@ -23,7 +23,7 @@ int mindistance(float distance[],bool stat[])
 	return ind;
 }
 
-void dijkstra(float graph[15][15],int source,string stations[14])
+void dijkstra(float graph[15][15],int source,string stations[15])
 {
 	float distance[15];
 	bool stat[15];
@@ -42,7 +42,7 @@ void dijkstra(float graph[15][15],int source,string stations[14])
 	}
     int k;
     cout<<"\n\n\nMinimum Number of Stations from"<<"["<<stations[source]<<"]"<<"To every station\n\n\n"<<endl;
-    for(int k=0;k<14;k++){
+    for(int k=0;k<15;k++){
     cout<<"Enter"<<" "<<k<<"To Cheak Distance Between"<<stations[source]<<" To "<<"["<<stations[k]<<"]"<<" "<<"Stations"<<endl;
 }
 int n;
@@ -191,7 +191,7 @@ void signup()
 }
 int main()
 {
-    float graph[14][15]={
+    float graph[15][15]={
         {0,1,0,0,0,0,0,0,0,0,0,0,0,0,0},
         {1,0,1,0,0,0,0,0,0,0,0,0,0,0,0},
         {0,1,0,1,0,0,0,0,0,0,0,0,0,0,0},
@@ -210,17 +210,17 @@ int main()
     int source;
     int n,W,ch,flag;
     char s;
-    cout<<"\t\t\t\t\t\t-------------------------------------Welcome To Green Line Patna Metro Distance Counter---------------------------------------\n\n";
+    cout<<"\t\t\t--------Welcome To Green Line Patna Metro Distance Counter--------\n\n";
     do
     {
         cout<<endl;
-        cout<<"\t\t\t\t\t\t\t  \t\t\t\t\t_______________________\n";
+        cout<<"\t\t\t\t\t\t\t  \t\t\t\t\t____________________________________\n";
         cout<<"\t\t\t\t\t\t\t   \t\t\t\t\t\xdb\xdb\xdb\xdb\xdb\xdb___________\xdb\xdb\xdb\xdb\xdb\xdb\n";
-       cout<<"\t\t\t\t\t\t\t   \t\t\t\t\t\xdb\xdb\xdb\xdb\xdb\xdb 1) LOGIN   \xdb\xdb\xdb\xdb\xdb\xdb\n";
-       cout<<"\t\t\t\t\t\t\t   \t\t\t\t\t\xdb\xdb\xdb\xdb\xdb\xdb  2) REGISTER  \xdb\xdb\xdb\xdb\xdb\xdb\n";
-        cout<<"\t\t\t\t\t\t\t   \t\t\t\t\t\xdb\xdb\xdb\xdb\xdb\xdb  2) EXIT  \xdb\xdb\xdb\xdb\xdb\xdb\n";
-         cout<<"\t\t\t\t\t\t\t   \t\t\t\t\t\xdb\xdb\xdb\xdb\xdb\xdb___________\xdb\xdb\xdb\xdb\xdb\xdb\n";
-          cout<<"\t\t\t\t\t\t\t   \t\t\t\t\t\xdb\xdb\xdb\xdb\xdb\xdb___________\xdb\xdb\xdb\xdb\xdb\xdb\n";
+       cout<<"\t\t\t\t\t\t\t   \t\t\t\t\t\xdb\xdb\xdb\xdb\xdb\xdb  1> LOGIN    \xdb\xdb\xdb\xdb\xdb\xdb\n";
+       cout<<"\t\t\t\t\t\t\t   \t\t\t\t\t\xdb\xdb\xdb\xdb\xdb\xdb  2> REGISTER  \xdb\xdb\xdb\xdb\xdb\xdb\n";
+        cout<<"\t\t\t\t\t\t\t   \t\t\t\t\t\xdb\xdb\xdb\xdb\xdb\xdb  3> EXIT     \xdb\xdb\xdb\xdb\xdb\xdb\n";
+         cout<<"\t\t\t\t\t\t\t   \t\t\t\t\t\xdb\xdb\xdb\xdb\xdb\xdb_____________\xdb\xdb\xdb\xdb\xdb\xdb\n";
+          cout<<"\t\t\t\t\t\t\t   \t\t\t\t\t\xdb\xdb\xdb\xdb\xdb\xdb_____________\xdb\xdb\xdb\xdb\xdb\xdb\n";
           cout<<"Enter your Choice : ";
           cin>>ch;
           system("cls");
